@@ -4,7 +4,7 @@ module.exports = {
         "es6": true
     },
     "extends": [
-        "airbnb"
+        "airbnb/legacy"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,5 +21,9 @@ module.exports = {
         "react"
     ],
     "rules": {
+        //eslint-disable-next-line no-unused-vars
+        "no-param-reassign": [2, {"props": false}],
+        "no-unused-vars": [ "off" ],
+        "no-return-assign": [ "off" ],
     }
 };
